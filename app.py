@@ -71,7 +71,7 @@ def stations():
     # Query stations
     # What are the most active stations? (i.e. what stations have the most rows)?
 # List the stations and the counts in descending order.
-    active = session.query(Measurement.station,func.count(Measurement.station)).group_by(Measurement.station).order_by(func.count(Measurement.station).desc()).all()
+    active = session.query(Measurement.station).group_by(Measurement.station).all()
 
 
     stations = list(np.ravel(active))
