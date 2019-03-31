@@ -76,7 +76,7 @@ def stations():
 
     stations = list(np.ravel(active))
 
-    return jsonify(stations_list)
+    return jsonify(stations)
 
 @app.route("/api/v1.0/tobs")
 def tobs(): 
