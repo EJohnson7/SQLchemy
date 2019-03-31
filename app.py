@@ -50,10 +50,10 @@ def welcome():
         f"/api/v1.0/tobs<br/>"
 
         f"Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range: (example replace to look like: /api/v1.0/2017-01-01<br/>"
-        f"/api/v1.0/<start><br/>"
+        f"/api/v1.0/start<br/>"
 
         f"Return a JSON list of tmin, tmax, tavg for the dates in range of start date and end date inclusive:(example replace to look like: /api/v1.0/2017-01-01/2017-01-07)<br/>"
-        f"/api/v1.0/<start>/<end><br/>"
+        f"/api/v1.0/start/end<br/>"
 
     )
 
